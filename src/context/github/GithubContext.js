@@ -11,7 +11,7 @@ const GITHUB_TOKEN = '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';
 export const GithubProvider = ({children}) => {
   const initialState = {
     users: [],
-    loading: true
+    loading: false
   }
 
   const [state, dispatch] = useReducer(githubReducer, initialState)
